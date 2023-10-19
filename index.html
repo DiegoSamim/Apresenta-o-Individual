@@ -18,9 +18,9 @@
             <p>Uma breve apresentação <br> e alguns projetos de estudos </p>
         </div>
         <nav>
-            <a href="#sobre">Quem sou eu</a>
-            <a href="#interesse">Hobbies e interesses</a>
-            <a target="_blank" href="Contato.html">Contato</a>
+            <a href="index.html">Home</a>
+            <a href="#">Projetos e Habilidades</a>
+            <a target="#" href="Contato.html">Quartinho do CSS</a>
         </nav>
     </header>
 
@@ -28,17 +28,31 @@
         <h1 id="tituloProjetos">Projetos</h1>
         <section class="projetos">
             <div>
-                <a>Organizador Comercial</a>
-                <a>Site de Lanchonete</a>
+                <a onmousemove="mudarOpacidade(['html', 'css', 'javascript'], true)" 
+                   onmouseout="mudarOpacidade(['html', 'css', 'javascript'], false)" 
+                   id="organizadorComercial">
+                   Organizador Comercial
+                </a>
+                <a id="siteDeLanchonete">Site de Lanchonete</a>
                 <a>Em breve</a>
                 <a>Em breve</a>
                 <a>Em breve</a>
                 <a>Em breve</a>
             </div>
+        </section>
+        <section class="habilidades">
+            <h1 id="tituloHabilidades">Habilidades</h1>
+            <div>
+                <img id="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" class="iconeHabilidade">
+                <img id="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" class="iconeHabilidade">
+                <img id="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" class="iconeHabilidade">
+                <img id="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" class="iconeHabilidade">
+                <img id="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" class="iconeHabilidade">
+                <img id="flutter" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" class="iconeHabilidade">
+
+            </div>
+        </section>
     </main>
-        
-        
-        
-    </main>
+    <script src="index.js"></script>
 </body>
 </html>
